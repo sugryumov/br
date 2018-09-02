@@ -23,11 +23,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+  <div class="wrapper">
+    <div class="overlay"></div>
     <header class="page-header">
       <div class="page-header__top">
         <a class="logotype" href="#">
-          <img class="logotype__image" src="img/logotype-mobile.png" width="90" height="45" alt="BR">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png" width="64" height="29">
+            <img class="logotype__image" src="img/logotype-mobile.png" width="90" height="45" alt="BR">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
@@ -54,7 +58,7 @@
                 <a class="site-list__link" href="#">контакты</a>
               </li>
             </ul>
-            <ul class="main-nav__list social-list">
+            <ul class="main-nav__list social-list social-list--mobile">
               <li class="social-list__item">
                 <a class="social-list__link" href="#">
                   <img class="social-list__icon--vk" src="img/vk-icon.png" width="37" height="24" alt="vk">
@@ -73,13 +77,55 @@
             </ul>
           </div>
         </nav>
+        <a class="page-header__phone" href="#">+7 (800) 823  48 88</a>
       </div>
       <h1 class="page-header__title">Дизайн интерьеров</h1>
       <p class="page-header__intro">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
-      <button class="page-header__button button">заказать дизайн</button>
+      <button class="page-header__button button">заказать дизайн<span class="page-header__button--desktop">&rarr;</span></button>
       <span class="page-header__arrow">&darr;</span>
-    </header>
+      <ul class="social-list social-list--desktop">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon--vk" src="img/vk-icon.png" width="37" height="24" alt="vk">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon--instagram" src="img/instagram-icon.png" width="37" height="37" alt="instagram">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon--fb" src="img/facebook-icon.png" width="21" height="37" alt="facebook">
+          </a>
+        </li>
+      </ul>
 
+      <div class="page-header__slider--container slider">
+        <div class="slider__item fade">
+          <img class="slider__image" src="img/slide-one.jpg" width="1163" height="595" alt="slide-one">
+        </div>
+        <div class="slider__item fade">
+          <img class="slider__image" src="img/slide-two.jpg" width="1163" height="595" alt="slide-two">
+        </div>
+        <div class="slider__item fade">
+          <img class="slider__image" src="img/slide-three.jpg" width="1163" height="595" alt="slide-three">
+        </div>
+        <div class="slider__item fade">
+          <img class="slider__image" src="img/slide-four.jpg" width="1163" height="595" alt="slide-four">
+        </div>
+      </div>
+
+      <a class="slider__next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="slider__dots">
+        <span class="slider__dots--dot" onclick="currentSlide(1)"></span>
+        <span class="slider__dots--dot" onclick="currentSlide(2)"></span>
+        <span class="slider__dots--dot" onclick="currentSlide(3)"></span>
+        <span class="slider__dots--dot" onclick="currentSlide(4)"></span>
+      </div>
+    </header>
+  </div>
 <script src="js/script.js"></script>
 </body>
 </html>
