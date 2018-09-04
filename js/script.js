@@ -1,3 +1,5 @@
+// hamburger menu
+
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
@@ -10,6 +12,8 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+// header slider
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -40,4 +44,32 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+// slick slider
+
+$(document).ready(function(){
+  $('.slider-filter').slick({
+    mobileFirst: true,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: '15px',
+    variableWidth: true,
+    arrows: false,
+  });
+});
+
+var btnContainer = document.querySelector('filter');
+var btns = document.getElementsByClassName('filter__button');
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', function() {
+    var current = document.getElementsByClassName('filter__button--active');
+
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace("--active", "");
+    }
+
+    this.className += '--active';
+  });
 }

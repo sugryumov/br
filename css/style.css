@@ -410,6 +410,78 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 .button {
   border: none;
   padding: 0;
@@ -436,6 +508,25 @@ img {
     font-size: 16px; }
     .button:hover {
       background-color: #fea052; } }
+
+.logotype {
+  width: 37px;
+  height: 23px;
+  vertical-align: top; }
+
+@media (min-width: 768px) {
+  .logotype {
+    width: 90px;
+    height: 45px; } }
+
+@media (min-width: 1200px) {
+  .logotype {
+    width: 64px;
+    height: 29px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 125px; } }
 
 .wrapper {
   position: relative;
@@ -575,25 +666,6 @@ img {
     height: 770px;
     background-color: #182c3d;
     opacity: 0.97; } }
-
-.logotype {
-  width: 37px;
-  height: 23px;
-  vertical-align: top; }
-
-@media (min-width: 768px) {
-  .logotype {
-    width: 90px;
-    height: 45px; } }
-
-@media (min-width: 1200px) {
-  .logotype {
-    width: 64px;
-    height: 29px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-left: 125px; } }
 
 .main-nav__toggle {
   position: relative;
@@ -818,7 +890,7 @@ img {
   max-width: 420px;
   margin: 0 auto;
   padding-top: 75px;
-  padding-bottom: 90px; }
+  padding-bottom: 30px; }
 
 .features__item {
   padding-left: 15px;
@@ -882,6 +954,53 @@ img {
     font-size: 16px; }
   .features__text {
     width: 250px; } }
+
+.portfolio {
+  max-width: 420px;
+  margin: 0 auto;
+  padding-bottom: 95px; }
+
+.portfolio__title {
+  margin: 0;
+  text-align: center;
+  font-size: 45px;
+  line-height: 1.2;
+  color: #1a292f; }
+
+.slider-filter__item {
+  position: relative;
+  max-width: 420px;
+  height: 530px;
+  margin: 0 15px;
+  background-color: transparent; }
+  .slider-filter__item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 270px;
+    height: 100%;
+    display: block;
+    background-color: #182c3d;
+    opacity: 0.9;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+
+.slick-active .slider-filter__item::before {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: transparent; }
+
+.slider-filter__title {
+  display: none; }
+
+.slick-active .slider-filter__title {
+  display: block;
+  width: 270px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #182c3d;
+  text-align: center; }
 
 .page-header__slider--container {
   display: none; }
@@ -947,3 +1066,23 @@ img {
       opacity: .4; }
     to {
       opacity: 1; } } }
+
+.filter {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+  padding-bottom: 10px; }
+
+.filter__button,
+.filter__button--active {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #838383;
+  font-size: 22px;
+  border: none;
+  background-color: transparent; }
+  .filter__button:hover, .filter__button--active,
+  .filter__button--active:hover,
+  .filter__button--active--active {
+    color: #182c3d; }
