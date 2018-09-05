@@ -56,10 +56,19 @@ $(document).ready(function(){
     centerPadding: '15px',
     variableWidth: true,
     arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+
+        }
+      }
+    ]
   });
 });
 
-var btnContainer = document.querySelector('filter');
+var btnContainer = document.querySelector('portfolio__list');
 var btns = document.getElementsByClassName('filter__button');
 
 for (var i = 0; i < btns.length; i++) {

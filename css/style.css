@@ -967,6 +967,26 @@ img {
   line-height: 1.2;
   color: #1a292f; }
 
+.portfolio__list {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+  padding-bottom: 10px; }
+
+.filter__button,
+.filter__button--active {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #838383;
+  font-size: 22px;
+  border: none;
+  background-color: transparent; }
+  .filter__button:hover, .filter__button--active,
+  .filter__button--active:hover,
+  .filter__button--active--active {
+    color: #182c3d; }
+
 .slider-filter__item {
   position: relative;
   max-width: 420px;
@@ -991,6 +1011,10 @@ img {
   transition: all 0.3s ease-out;
   background-color: transparent; }
 
+.slider-filter__image {
+  width: 270px;
+  height: 530px; }
+
 .slider-filter__title {
   display: none; }
 
@@ -1001,6 +1025,37 @@ img {
   font-size: 20px;
   color: #182c3d;
   text-align: center; }
+
+@media (min-width: 768px) {
+  .portfolio {
+    max-width: 768px;
+    padding-bottom: 160px;
+    background-image: url("../img/bg-tablet.png");
+    background-position: center;
+    background-repeat: repeat-y; }
+  .portfolio__title {
+    padding-left: 35px;
+    text-align: left; }
+  .portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px; }
+  .slider-filter__item {
+    max-width: 605px;
+    height: 605px; }
+    .slider-filter__item::before {
+      width: 605px; }
+  .slider-filter__image {
+    width: 605px;
+    height: 605px; }
+  .slick-active .slider-filter__title {
+    width: 605px;
+    margin-top: 45px; } }
 
 .page-header__slider--container {
   display: none; }
@@ -1066,23 +1121,3 @@ img {
       opacity: .4; }
     to {
       opacity: 1; } } }
-
-.filter {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 40px;
-  padding-bottom: 10px; }
-
-.filter__button,
-.filter__button--active {
-  display: block;
-  padding: 0;
-  margin-bottom: 20px;
-  color: #838383;
-  font-size: 22px;
-  border: none;
-  background-color: transparent; }
-  .filter__button:hover, .filter__button--active,
-  .filter__button--active:hover,
-  .filter__button--active--active {
-    color: #182c3d; }
