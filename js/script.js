@@ -59,9 +59,15 @@ $(document).ready(function(){
 
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1163,
         settings: {
-
+          centerMode: false,
+          centerPadding: '0',
+          slidesToShow: 4,
+          arrows: true,
+          slidesToScroll: 2,
+          nextArrow: "<button class='slider-filter__next'>&#10230;</button>",
+          prevArrow: "<button class='slider-filter__prev'>&#10229;</button>"
         }
       }
     ]
