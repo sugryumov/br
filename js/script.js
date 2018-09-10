@@ -74,6 +74,8 @@ $(document).ready(function(){
   });
 });
 
+// portfolio active link
+
 var btnContainer = document.querySelector('portfolio__list');
 var btns = document.getElementsByClassName('filter__button');
 
@@ -87,4 +89,23 @@ for (var i = 0; i < btns.length; i++) {
 
     this.className += '--active';
   });
+}
+
+// services tabs
+
+document.getElementById("defaultOpen").click();
+
+function openService (evt, servicesName) {
+  var tabcontent = document.getElementsByClassName("tabcontent");
+  for (var i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  var tablinks = document.getElementsByClassName("tablinks");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(servicesName).style.display = "block";
+  evt.currentTarget.className += " active"
 }
