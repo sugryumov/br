@@ -1231,8 +1231,55 @@ img {
   color: #1a292f; }
   .services__button:hover {
     background-color: #fea052;
-    border-color: #ffffff;
+    border-color: #fea052;
     color: #ffffff; }
+
+.tabcontent__title {
+  display: none; }
+
+.services__amount {
+  display: none; }
+
+@media (min-width: 768px) {
+  .services {
+    max-width: 768px;
+    background-image: url("../img/bg-tablet.png");
+    background-position: center;
+    background-repeat: repeat-y; }
+  .services__tabs {
+    padding-left: 36px;
+    padding-bottom: 15px; }
+  .tablinks {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 75px;
+    padding: 0; }
+  .services__image {
+    width: 768px; }
+  .tabcontent__title {
+    display: block;
+    margin-bottom: 0;
+    padding-left: 36px;
+    padding-right: 36px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #1a292f; }
+  .services__amount {
+    display: inline;
+    float: right;
+    font-size: 22px; }
+  .services__text {
+    display: inline-block;
+    padding-left: 36px;
+    width: 500px;
+    font-size: 18px; }
+  .services__button {
+    width: 340px;
+    height: 65px;
+    margin: 0;
+    margin-left: 36px;
+    margin-bottom: 200px;
+    font-size: 18px; } }
 
 .page-header__slider--container {
   display: none; }
