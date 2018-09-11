@@ -1203,7 +1203,7 @@ img {
   .tablinks:last-child {
     margin-bottom: 0; }
 
-.tablinks.active {
+.tablinks--active {
   color: #182c3d; }
 
 .tabcontent {
@@ -1280,6 +1280,56 @@ img {
     margin-left: 36px;
     margin-bottom: 200px;
     font-size: 18px; } }
+
+@media (min-width: 1200px) {
+  .services {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1163px;
+    padding-bottom: 140px;
+    background-image: none; }
+  .services__title {
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: left; }
+  .services__tabs {
+    -ms-flex-preferred-size: 285px;
+        flex-basis: 285px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 15px; }
+  .tablinks {
+    width: 180px;
+    margin-bottom: 70px;
+    font-size: 18px; }
+  .tablinks--active {
+    margin-left: 35px; }
+  .services__image {
+    width: 878px; }
+  .tabcontent {
+    position: relative; }
+  .tabcontent__title {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 60px; }
+  .services__amount {
+    font-size: 18px; }
+  .services__text {
+    padding-left: 0;
+    margin-bottom: 0; }
+  .services__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 220px;
+    height: 55px;
+    margin: 0;
+    font-size: 15px; } }
 
 .page-header__slider--container {
   display: none; }
