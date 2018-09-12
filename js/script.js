@@ -109,3 +109,9 @@ function openService (evt, servicesName) {
   document.getElementById(servicesName).style.display = "block";
   evt.currentTarget.className += " tablinks--active"
 }
+
+//// video overlay
+
+document.querySelector(".video__play").onclick = function(){
+	document.querySelector(".video__overlay").style.display = "none";
+}
