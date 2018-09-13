@@ -487,7 +487,7 @@ img {
   padding: 0;
   width: 224px;
   height: 54px;
-  background-color: #fea052;
+  background-color: #f5b77f;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -507,7 +507,7 @@ img {
     border: 1px solid #ffffff;
     font-size: 16px; }
     .button:hover {
-      background-color: #fea052; } }
+      background-color: #f5b77f; } }
 
 .logotype {
   width: 37px;
@@ -791,7 +791,7 @@ img {
   text-decoration: none;
   text-transform: uppercase; }
   .site-list__link--active, .site-list__link:hover {
-    color: #fea052; }
+    color: #f5b77f; }
 
 @media (min-width: 768px) {
   .site-list {
@@ -899,7 +899,7 @@ img {
 .features__number {
   font-size: 85px;
   font-weight: bold;
-  color: #fea052; }
+  color: #f5b77f; }
 
 .features__title {
   font-size: 24px;
@@ -1128,7 +1128,7 @@ img {
     height: 90px;
     margin-left: -40px;
     margin-top: -40px;
-    background-color: #fea052;
+    background-color: #f5b77f;
     border-radius: 50%;
     opacity: 0.9;
     font-size: 60px;
@@ -1230,8 +1230,8 @@ img {
   background-color: transparent;
   color: #1a292f; }
   .services__button:hover {
-    background-color: #fea052;
-    border-color: #fea052;
+    background-color: #f5b77f;
+    border-color: #f5b77f;
     color: #ffffff; }
 
 .tabcontent__title {
@@ -1374,7 +1374,8 @@ img {
   width: 90px;
   height: 90px;
   margin: 0 auto;
-  background-color: #fea052;
+  margin-bottom: 30px;
+  background-color: #f5b77f;
   border-radius: 50%;
   cursor: pointer; }
   .video__play::before {
@@ -1391,6 +1392,52 @@ img {
   color: #ffffff;
   font-size: 22px;
   line-height: 30px; }
+
+@media (min-width: 768px) {
+  .video {
+    background-image: url("../img/bg-tablet.png");
+    background-position: center;
+    background-repeat: repeat-y; }
+  .video__wrapper {
+    max-width: 768px;
+    height: 812px; }
+  .video__overlay {
+    background-image: url("../img/bg-video-tablet.jpg"); }
+  .video__play {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 35px; }
+    .video__play::before {
+      content: url(../img/play-icon-tablet.png);
+      width: 29px;
+      height: 33px;
+      margin-top: -16px;
+      margin-left: -10px; }
+  .video__description {
+    width: 450px;
+    margin-left: -225px;
+    margin-top: -120px; } }
+
+@media (min-width: 1200px) {
+  .video__wrapper {
+    min-width: 100%;
+    height: 595px; }
+  .video__overlay {
+    background-image: url("../img/bg-video.jpg"); }
+  .video__description {
+    width: 100%;
+    margin-left: -50%;
+    margin-top: -90px; }
+  .video__play {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 30px; }
+    .video__play::before {
+      content: url(../img/play-icon.png);
+      width: 19px;
+      height: 22px;
+      margin-top: -11px;
+      margin-left: -8px; } }
 
 .page-header__slider--container {
   display: none; }
@@ -1439,7 +1486,7 @@ img {
     border-radius: 3px 0 0 3px;
     background-color: #182c3d; }
     .slider__next:hover {
-      background-color: #fea052; }
+      background-color: #f5b77f; }
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
