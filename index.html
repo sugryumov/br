@@ -43,19 +43,16 @@
                 <a class="site-list__link" href="#">главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--active" href="#">преимущества</a>
+                <a class="site-list__link" href="#features">преимущества</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">портфолио</a>
+                <a class="site-list__link" href="#portfolio">портфолио</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">наши услуги</a>
+                <a class="site-list__link" href="#services">наши услуги</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">отзывы</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">контакты</a>
+                <a class="site-list__link" href="#order">контакты</a>
               </li>
             </ul>
             <ul class="main-nav__list social-list social-list--mobile">
@@ -126,7 +123,7 @@
       </div>
     </header>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="features__item">
         <span class="features__number">01</span>
         <div class="features__title">Берем весь ремонт <br>на себя</div>
@@ -149,7 +146,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio__title">Портфолио</div>
 
       <div class="portfolio__list filter">
@@ -251,7 +248,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__title">Наши услуги</div>
       <div class="services__tabs">
         <button class="tablinks" id="defaultOpen" onclick="openService(event, 'room')">Дизайн жилого помещения</button>
@@ -392,7 +389,7 @@
       </ul>
     </section>
 
-    <section class="order">
+    <section class="order" id="order">
       <div class="order__left">
         <div class="order__overlay"></div>
         <div class="order__title">Мечтаете <br>об интерьере от BRUME?</div>
@@ -408,10 +405,37 @@
         <button class="order__button" type="button">Отправить</button>
         <p class="order__text">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
       </div>
-      <div class="order__img">
-        <!-- <img class="order__img--desktop" src="img/bg-form-desktop.jpg" width="683" height="683" alt=""> -->
-      </div>
+      <div class="order__img"></div>
     </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__contact">
+        <a class="footer__logotype" href="#">
+          <img class="logotype__image" src="img/logotype-mobile.png" width="70" height="40" alt="BR">
+        </a>
+        <ul class="footer__social">
+          <li class="footer__social__item">
+            <a class="footer__social__link" href="#">
+              <img class="" src="img/vk-icon.png" width="37" height="24" alt="vk">
+            </a>
+          </li>
+          <li class="footer__social__item">
+            <a class="footer__social__link" href="#">
+              <img class="" src="img/instagram-icon.png" width="37" height="37" alt="instagram">
+            </a>
+          </li>
+          <li class="footer__social__item">
+            <a class="footer__social__link" href="#">
+              <img class="" src="img/facebook-icon.png" width="21" height="37" alt="facebook">
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div class="footer__copyright">BRUME interior, 2017 ©</div>
+        <div class="footer__by">HolodnayaDesign</div>
+      </div>
+    </footer>
 
   </div>
 

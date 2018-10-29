@@ -1721,6 +1721,90 @@ img {
     background-size: cover;
     background-position: bottom center; } }
 
+.footer {
+  background-color: #182c3d; }
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 420px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+.footer__contact {
+  text-align: center; }
+
+.footer__logotype {
+  width: 70px;
+  height: 40px; }
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -12px; }
+
+.footer__social__item {
+  margin-right: 65px; }
+  .footer__social__item:last-child {
+    margin-right: 0; }
+
+.footer__copyright,
+.footer__by {
+  margin: 0;
+  color: #f5b77f;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 768px;
+    padding-top: 75px;
+    padding-bottom: 80px; }
+  .footer__social {
+    margin-bottom: 0; }
+  .footer__social__link img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  .footer__copyright {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    font-size: 16px;
+    padding-left: 36px; }
+  .footer__by {
+    font-size: 16px;
+    padding-right: 36px; } }
+
+@media (min-width: 1200px) {
+  .footer__wrapper {
+    max-width: 1163px; } }
+
 .page-header__slider--container {
   display: none; }
 
